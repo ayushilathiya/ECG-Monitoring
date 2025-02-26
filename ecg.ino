@@ -5,18 +5,18 @@
 const int ecgPin = A0;  // Pin connected to AD8232 OUT
 
 // WiFi Credentials
-const char* ssid = "vivo";
-const char* password = "zxcvbnmlkj";
+const char* ssid = "yourssid";
+const char* password = "yourpassword";
 
 // ThingSpeak API Credentials
-unsigned long channelID = 2797481;
-const char* writeAPIKey = "UDPLLNLWFXZ2WQQL";
+unsigned long channelID = yourchannelid;
+const char* writeAPIKey = "your APIkey";
 
 WiFiClient client;
 
 // Firebase Credentials
-#define FIREBASE_HOST "ecg-raw-graph-default-rtdb.firebaseio.com"  // Replace with your Firebase database URL (without https://)
-#define FIREBASE_AUTH "ZwCMIQkAb0PEvo578pcQFZQyaMgapYvu1Jthg6sA"  // Replace with your Firebase Database Secret
+#define FIREBASE_HOST ""  // Replace with your Firebase database URL (without https://)
+#define FIREBASE_AUTH ""  // Replace with your Firebase Database Secret
 
 FirebaseData firebaseData;
 FirebaseConfig firebaseConfig;
